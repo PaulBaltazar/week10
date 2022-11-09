@@ -25,15 +25,34 @@
 
 let fruits = ['Apple','Banana'];
 fruits.push("Orange");
-console.log(fruits);
 
-fruits.pop;
-console.log(fruits);
+for (let item of fruits)
+{
+    console.log(item)
+}
 
-fruits.unshift("Mango");
-console.log(fruits);
+// fruits.pop;
+// console.log(fruits);
 
-fruits.shift();
-console.log(fruits);
+// fruits.unshift("Mango");
+// console.log(fruits);
 
-console.log(fruits.indexOf("Apple"))
+// fruits.shift();
+// console.log(fruits);
+
+// console.log(fruits.indexOf("Apple"))
+
+const person = {
+    name:['Bob', 'Smith'],
+    age: 32,
+    gender:'male',
+    hobbies :['music', 'skiing']
+}
+
+console.log(`My name is ${person.name[0]} ${person.name[1]}. I am interested in ${person.hobbies[0]} and ${person.hobbies[1]}`)
+
+for (let key in person)
+{
+    console.log(key);
+    console.log(person[key]);
+}
